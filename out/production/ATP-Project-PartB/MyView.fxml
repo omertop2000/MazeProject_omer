@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<!--<?import View.*?>-->
+<?import View.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane fx:id="main_pane" onMouseClicked="#mouseClicked" onScroll="#zoomHandle" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MyViewController">
+    <ImageView fx:id="mainImageView" fitHeight="592.0" fitWidth="830.0" pickOnBounds="true" preserveRatio="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <image>
+            <Image url="/images/CaveBackground.jpg"/>
+        </image>
+    </ImageView>
+  <VBox minHeight="0" minWidth="0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <HBox prefHeight="36.0" prefWidth="5000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="solveButton" mnemonicParsing="false" prefHeight="50" prefWidth="5000" text="Solve" onAction="#solveMaze"/>
+            <Button fx:id="saveButton" mnemonicParsing="false" prefHeight="50" prefWidth="5000" text="Save" onAction="#SaveMaze"/>
+            <Button fx:id="helpButton" mnemonicParsing="false" prefHeight="50" prefWidth="5000" text="Help" onAction="#helpButton"/>
+            <Button fx:id="backButton" mnemonicParsing="false" prefHeight="50" prefWidth="5000" text="Back" onAction="#returnBack"/>
+         </children>
+      </HBox>
+      <AnchorPane minHeight="0" minWidth="0" prefHeight="5000" prefWidth="5000" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <MazeDisplay onMouseDragged="#mouseDragged" onMouseClicked="#mouseClickedCanvas" fx:id="mazeDisplay" height="332.0" imageFileNameWall="images/WallBlock.png" onKeyPressed="#keyPressed" width="397.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </AnchorPane>
+  </VBox>
+</AnchorPane>

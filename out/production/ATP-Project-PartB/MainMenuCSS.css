@@ -1,0 +1,18 @@
+Button {
+    -fx-font-size: 40;
+    -fx-text-fill: #000000;
+    -fx-font-family: "Serif";
+    -fx-font-weight: bold;
+    -fx-font-style: oblique  ;
+    -fx-font-smoothing-type: lcd;
+    -fx-background-color: linear-gradient(#415529, #415529);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+
+    -fx-border-color:black;
+    -fx-border-width: 3 3 3 3;
+
+    -fx-background-image: url("/images/GreenStone.png");
+    /*-fx-background-size: 30px;*/
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+}

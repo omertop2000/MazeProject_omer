@@ -1,0 +1,28 @@
+Label{
+    -fx-background-color: linear-gradient(#52811e, #477017);
+    -fx-border-color:black;
+    -fx-border-width: 3 3 3 3;
+
+    -fx-background-image: url("/images/Stone.png");
+    /*-fx-background-size: 30px;*/
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+
+}
+
+RadioButton{
+    -fx-background-color: linear-gradient(#52811e, #477017);
+    -fx-border-color:black;
+    -fx-border-width: 3 3 3 3;
+}
+CheckBox{
+    -fx-background-color: linear-gradient(#52811e, #477017);
+    -fx-border-color:black;
+    -fx-border-width: 3 3 3 3;
+}
+
+TextField{
+    -fx-background-color: linear-gradient(#d4e9b1, #cfeab1);
+    -fx-border-color:black;
+    -fx-border-width: 3 3 3 3;
+}

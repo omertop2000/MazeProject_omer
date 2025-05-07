@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.image.Image?>
+
+<AnchorPane fx:id="mainPane" prefHeight="598.0" prefWidth="786.0" stylesheets="@LoadWindowCSS.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.AboutWindowController">
+    <children>
+        <ImageView fx:id="mainImageView" fitHeight="592.0" fitWidth="830.0" pickOnBounds="true" preserveRatio="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="/images/BackgroundGif.gif"/>
+            </image>
+        </ImageView>
+        <GridPane prefHeight="592.0" prefWidth="830.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="5000.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="516.6" minHeight="10.0" prefHeight="346.20002441406245" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="342.0" minHeight="10.0" prefHeight="250.99997558593748" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button fx:id="backButton" mnemonicParsing="false" onAction="#backToMenu" prefHeight="78.0" prefWidth="154.0" text="Back" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </Button>
+            <TextArea editable="false" prefHeight="381.0" prefWidth="830.0" text="Developers:&#10;Omer Topchi, Matan isar.&#10;&#10;&#10; Algorithm used to solve the maze:&#10;- Breadth First Search (BFS): An algorithm for traversing or searching tree&#10;        or graph data structures. It starts at the tree root (or some arbitrary node&#10;        of a graph), and explores all of the neighbor nodes at the present depth&#10;        prior to moving on to the nodes at the next depth level.&#10;&#10;- Depth First Search (DFS):An algorithm for traversing or searching tree&#10;         or graph data structures. The algorithm starts at the root node (selecting&#10;         some arbitrary node as the root node in the case of a graph) and explores&#10;         as far as possible along each branch before backtracking.&#10;&#10;- Best First Search (Best): Best-first search is a search algorithm which explores&#10;          a graph by expanding the most promising node chosen according to a&#10;          specified rule.">
+               <font>
+                  <Font name="David" size="24.0" />
+               </font>
+            </TextArea>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>
