@@ -1,4 +1,4 @@
-MazeSolverUI 
+MazeProject
 
 Omer Topchi, Matan Isar.
 
